@@ -30,6 +30,15 @@ Enter one side: 5
 Enter a second side: 15
 Enter third side: 12
 that is an obtuse triangle
-
-
 """
+import math
+
+a = float(input("enter side a: "))
+b = float(input("enter side b: "))
+c = float(input("enter side c: "))
+if math.sqrt((a**2) + (b**2)) == c:
+    print("that is a right triangle")
+elif math.sqrt((a**2) + (b**2)) > c:
+    print("that is an acute triangle")
+elif math.sqrt((a**2) + (b**2)) < c:
+    print("that is an obtuse triangle")

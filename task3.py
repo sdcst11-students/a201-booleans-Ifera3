@@ -28,6 +28,14 @@ Enter a number: 212
 
 Enter a number: 10000
 3
-
-
 """
+
+x = int(input("enter a number: "))
+if x in range(1,10):
+    print(0)
+elif x in range(11, 100):
+    print(1)
+elif x in range(100,1000):
+    print(2)
+elif x > 1000:
+    print(3)

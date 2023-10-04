@@ -29,3 +29,19 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+a = int(input("enter a: "))
+b = int(input("enter b: "))
+c = int(input("enter c: "))
+
+if (math.pow(b,2) - 4 * a * c) > 0:
+    discriminant = math.sqrt(math.pow(b,2) - 4 * a * c)
+    if (discriminant % 2) == 0:
+        print("the equation can be factored")
+    elif (discriminant % 2) == 1:
+        print("the equation can be factored")
+    else:
+        print("the equation can not be factored")
+else:
+    print("the equation can not be factored")
